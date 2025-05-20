@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:SensorTester.Pages"
+             x:Class="SensorTester.Pages.TabsPage"
+             >
+    <TabBar >
+        <Tab Title="Sensors" Icon="{DynamicResource IconSensor}">
+            <ShellContent ContentTemplate="{DataTemplate pages:SensorsPage}" />
+        </Tab>
+        <Tab Title="projects" Icon="{DynamicResource IconProjects}">
+            <ShellContent ContentTemplate="{DataTemplate pages:ProjectListPage}" />
+        </Tab>
+    </TabBar>
+</Shell>
